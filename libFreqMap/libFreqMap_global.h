@@ -1,0 +1,12 @@
+#ifndef LIBFREQMAP_GLOBAL_H
+#define LIBFREQMAP_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(LIBFREQMAP_LIBRARY)
+#  define LIBFREQMAP_EXPORT Q_DECL_EXPORT
+#else
+#  define LIBFREQMAP_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // LIBFREQMAP_GLOBAL_H
